@@ -83,3 +83,16 @@ JUnit5 -> @ExtendWith(SpringExtension.class)
 -> final 이 없는 필드는 생성자에 포함되지 않는다. 
 
 
+### JPA
+
+JPA -> 자바 표준 ORM ( Object Relational Mapping = 객체를 매핑)
+
+(% MyBatis 와 iBatis 는 ORM 이 아니다. SQL Mapper 다. = 쿼리를 매핑)
+
+서로 지향하는 바가 다른 2개의 영역 ( 객체 지향 프로그래밍 언어와 관계형 데이터 베이스 ) 중간에서 패러다임 일치를 시켜주기 위한 기술이다.
+
+JPA -> 인터페이스로서 자바 표준명세서 즉, 사용하기 위해서는 구현체가 필요 ( Hibernate , EclipseLink ) But, Spring 에서 JPA 를 사용할 때는 이 구현체들을 직접 다루지는 않는다. (=> Spring Data JPA 라는 모듈을 사용해서 다룸) 
+
+( Spring Data JPA -> Hibernate -> JPA ) -> 구현체 교체의 용이성, 저장소 교체의 용이성
+
+
